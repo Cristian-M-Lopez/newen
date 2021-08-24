@@ -1,0 +1,1225 @@
+/* =============================================================================
+Website Name: Newen Beer
+Author: Cristian Lopez
+Author URI: http://www.weemileltd.com
+==============================================================================*/
+
+body {
+    background-color: #262626;
+    color:#fff;
+    font-family: Raleway, sans-serif;
+    width: 100%;
+    }
+
+ *{
+   margin: 0;
+   padding: 0;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mulish',sans-serif;
+    font-weight: 700;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+h1 {
+    font-size: 80px !important;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 70px !important;
+    line-height: 70px;
+    margin-bottom:20px;
+}
+
+
+h3 {
+    font-size: 24px !important;
+    line-height: 50px;
+}
+
+
+h4 {
+    font-size: 20px !important;
+    line-height: 50px;
+}
+
+.acento {
+   color: #e6bf55;
+}
+
+p  {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    font-size:16px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    background-image: url(./img/newen_header_background.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  
+}
+
+.nav-social {
+    display: flex;
+    list-style: none;
+}
+
+.nav-social ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-social li {
+    margin:15px;
+   
+}
+
+.fa, .fas {
+    color: #e6bf55;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100px;
+}
+
+
+/*=============BURGER MENU======================*/
+
+.mobile-menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 16px;
+    top: 0;
+    background-color:transparent;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 9999999;
+  }
+  
+  
+
+  .mobile-menu__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    right: 80px;
+    z-index: 9999999;
+    top: 20px;
+  }
+  .mobile-menu__icon {
+    display: block;
+    position: relative;
+    background: white;
+    width: 80%;
+    height: 4px;
+    transition: 0.4s;
+  }
+  .mobile-menu__icon::after, .mobile-menu__icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 4px;
+    transition: 0.4s;
+  }
+  .mobile-menu__icon::after {
+    top: 8px;
+  }
+  .mobile-menu__icon::before {
+    top: -8px;
+  }
+  .mobile-menu__container {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 0;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    overflow: hidden;
+    background-color:#070707d1;
+  }
+  .mobile-menu__list {
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    list-style: none;
+    padding-left: 0;
+    margin-top: -50px;
+  }
+  .mobile-menu__item {
+    font-family: 'Raleway',sans-serif;
+    font-size: 33px;
+    padding-bottom: 15px;
+    font-weight: 700;
+  }
+  .mobile-menu__link {
+    text-decoration: none;
+    color: #fff;
+  }
+  .mobile-menu__checkbox {
+    display: none;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__nav {
+    opacity: 1;
+    transition-delay: 0s;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__container {
+    height: 100%;
+    transition-delay: 0s;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+    background: transparent;
+  }
+  
+
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn  .mobile-menu__icon::after {
+    top: 0;
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  
+
+  
+  .mobile-menu__link::before, 
+  .mobile-menu__link::after {
+    top: 0;
+  }
+  .mobile-menu__link::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .mobile-menu__link::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  
+  
+/*======================END BURGER MENU=========================*/
+
+.header {
+    padding: 120px 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header p  {
+    font-size:22px;
+    line-height: 30px;
+}
+
+.header-info {
+    margin-top: -200px;
+    width: 45%;
+    padding: 0 50px;
+}
+
+
+.header-image {
+    height: auto;
+    vertical-align: top;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+
+/*========BUTTON===============*/
+
+.button-beer {
+    border-radius: 64px;
+    background-color: #e6bf55;
+    padding: 15px 25px;
+    margin-top: 50px;
+    font-weight: 700;
+    box-shadow: 1px 1px 15px 5px #3c2514;
+    border: 1px solid #fff0;
+}
+
+.button-beer:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.button-beer:hover  {
+    color: #fff !important;
+    background-color: #000000 !important;
+    box-shadow: inset 0 0px 0 0 #e6bf55;
+}
+
+.button-login {
+    text-decoration: none;
+    border-radius: 64px;
+    background-color: #e6bf5500;
+    padding: 10px 25px;
+    font-weight: 700;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-right: 150px;
+    margin-left: -150px;
+}
+
+
+
+.button-login:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.button-login:hover  {
+    color: #fff !important;
+    background-color: #e6bf55 !important;
+
+}
+/*======================END-BUTTON========================*/
+
+/*=======================LOGIN============================*/
+
+.login-wrap {
+    font-family: 'Raleway',sans-serif;
+    width: 100%;
+    margin: auto;
+    min-height: 670px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+}
+
+.login-html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 80px 0px 70px;
+    background: rgb(12 12 12 / 90%);
+    box-sizing: border-box;
+    margin-top: -20px;
+}
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 10px 15px 10px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+    font-size:18px;
+}
+.login-form .group .input,
+.login-form .group .button:focus-visible {
+outline: none !important;
+}
+
+.login-form .group input[data-type="password"] {
+	
+	-webkit-text-security:circle;
+}
+.login-form .group .label {
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+
+
+/*----------MODAL LOGIN------------*/
+
+.modal-contenido2 {
+    width: 50%;
+    margin: 5% auto;
+    display: flex;
+    height: fit-content;
+    justify-content: flex-end;
+}
+
+.modal-contenido2 a {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 12px;
+    position: absolute;
+    padding: 10px;
+    color: #fff;
+    margin: 40px;
+    z-index: 99999999;
+}
+
+  .modal2 {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+
+  #miModal2:target {
+    opacity: 9;
+    pointer-events: auto;
+    background-color: #000000c7;
+}
+
+/*----------END MODAL LOGIN------------*/
+
+/*=====================END LOGIN========================*/
+
+/*=========================MAIN==========================*/
+
+.advantages {
+    background-color: #152718;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 80px 50px;
+}
+    
+.icon-list {
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.icon-list2 {
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align: right;
+}
+
+   .icon-box {
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    padding:15px;
+       
+   }
+
+.icon-box h2 {
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.icon-img {
+    width: 70px;
+    margin: 30px 20px 0px 20px;
+}
+
+.image-about {
+    margin-top:80px;
+}
+
+
+/*=========================ABOUT=========================*/
+
+.about{
+    background-color: #1a1a1a;
+    padding: 30px 30px 120px 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+}
+
+.about p  {
+    font-size:22px;
+    line-height: 30px;
+}
+
+.about-info {
+    padding: 50px;
+}
+
+
+.image-about {
+    border-radius: 0px 80px 80px 0px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.image-about {
+    border-radius: 0px 25px 25px 0px;
+    
+}
+
+
+
+/*=======================END ABOUT======================*/
+
+/*====================PRODUCT LIST======================*/
+
+.products {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 120px 80px 150px 80px;
+}
+
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    height:60vh;
+    border-radius: 25px;
+    border: 1px solid #ffffff54;
+
+}
+
+.product-list:hover {
+    background-color: black;
+}
+
+.product-list h4:hover {
+    color:#e6bf55;
+}
+
+.image-product {
+margin-top:-120px
+}
+
+.button-product {
+    border-radius: 64px;
+    background-color: #ac0001;
+    color: #fff;
+    padding: 15px 25px;
+    margin-top: 20px;
+    font-weight: 700;
+    border: 1px solid #fff0;
+}
+
+.button-product:hover {
+    background-color: #101010;
+
+}
+/*====================END PRODUCT LIST=====================*/
+
+/*=====================PROMOTION=========================*/
+
+.promotion {
+    background-color: #6d1d1d;
+    background-image: url(./img/newen_background_promotion.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: auto;
+    padding: 80px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video {
+    width: 80%;
+    text-align: center;
+    background-image: url(./img/newen-video.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    padding: 90px 50px 50px 50px;
+    box-sizing: border-box;
+    margin-top: -200px;
+}
+
+.video {
+    font-size: 44px !important;
+    line-height: 50px;
+}
+
+.icon-divider {
+    width: 64px;
+}
+
+.video + .fa, .far, .fas {
+    font-size: 100px;
+    background-color: #e6b73d;
+    border-radius: 50%;
+}
+
+.icon-play {
+    color: #fff;
+}
+
+.icon-play:hover {
+    color: #ce8d14;
+}
+/*----------MODAL------------*/
+
+.modal-contenido {
+    background-color: rgb(0 0 0);
+    width: 50%;
+    padding: 20px 20px 20px 0px;
+    margin: 7% auto;
+    display: flex;
+    height: fit-content;
+    justify-content: flex-end;
+}
+
+.modal-contenido a {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #000 !important;
+    border-radius: 50%;
+    line-height: 12px;
+    position: absolute;
+    padding: 10px;
+    color: #fff;
+    margin: -40px;
+}
+
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+
+  #miModal:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+/*----------END MODAL------------*/
+
+.promo-menu {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 80%;
+}
+
+.action-asado {
+    transition: transform .2s;
+    background-image: url(./img/newen_asado_menu.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin: 20px 0px 0px;
+    padding: 50px 150px 50px 30px;
+    box-sizing: border-box;
+}
+
+.action-asado:hover {
+    transform: scale(1.1);
+}
+
+.action-asado h3 {
+    font-size: 40px !important;
+    line-height: 40px;
+    word-wrap: break-word;
+
+}
+
+.action-cerveza {
+    transition: transform .2s;
+    background-image: url(./img/newen_cerveza_menu.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin: 20px 0px 0px;
+    padding: 50px 180px 50px 30px;
+    box-sizing: border-box;
+}
+
+.action-cerveza:hover {
+    transform: scale(1.1);
+}
+
+.action-cerveza h3 {
+    font-size: 40px !important;
+    line-height: 40px;
+    word-wrap: break-word;
+
+}
+
+/*=====================PROMOTION=========================*/
+
+/*=====================PREFOOTER=========================*/
+  .gallery-prefooter {
+    display: flex;
+  }
+  
+  .image-gallery {
+    width: 100%;
+    height: auto;
+}
+
+  
+ .image-gallery:hover {
+     opacity: 0.5;
+  }
+
+/*=====================END PREFOOTER======================*/ 
+
+/*=========================FOOTER=========================*/  
+
+footer {
+    width: 100%;
+    background-color: #28211b;
+    background-image: url(./img/newen_footer.png) !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-contenedor {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    /*display: flex;
+    justify-content: space-between;*/
+    height: auto;
+    padding: 50px;
+    margin-top:-5px;
+}
+
+
+.footer-logo {
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    padding: 40px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+}
+
+.icon-box-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.footer-contact h3 {
+    font-size: 28px !important;
+    line-height: 50px;
+    margin-left: 30px;
+    color: #e6bf55;
+    margin-bottom:10px;
+}
+
+
+.footer-subscribe h3 {
+    font-size: 28px !important;
+    line-height: 50px;
+    color: #e6bf55;
+}
+
+.icon-footer {
+    width: 40px;
+    margin: 0px 20px 0px 20px;
+}
+
+.logo-footer {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.btn-footer  {
+    border-radius: 64px;
+    background-color: #e6bf55;
+    padding: 15px 25px;
+    margin-top: 50px;
+    font-weight: 700;
+    border: 1px solid #fff0;
+}
+
+.btn-footer :hover {
+    background-color: #101010;
+}
+
+footer input {
+    border-radius: 64px;
+    padding: 15px 25px;
+    margin-top: 20px;
+    font-weight: 700;
+    border: 1px solid #fff0;
+    margin-bottom: -30px;
+    font-size: 16px;
+}
+
+footer input:focus-visible {
+    outline: none;
+}
+
+.copywrite {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding: 10px 80px;
+    border-top: 1px solid #ffffff26;
+}
+
+.copywrite + .fa, .fas {
+    color: #e42e2e;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.copywrite a {
+    text-decoration: none;
+    color: #e6bf55;
+}
+
+
+.whatsapp__btn {
+    background: #e61717;
+    display: block;
+    margin-left: 0px;
+    left: unset;
+    right: 30px;
+    bottom: 60px;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    position: fixed;
+    z-index: 999999999;
+    font-size: 45px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+.whatsapp__btn a {
+    color: #fff;
+}
+
+.whatsapp__btn :hover {
+    color: #e6bf55;
+}
+
+/*=======================END=FOOTER=======================*/  
+
+
+/*=======================MEDIAQUERY======================*/
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+@media  (min-width: 768px) {
+.login-mobile {
+    display:none;
+}
+}
+
+@media  (max-width: 1200px) {
+
+
+h1, h2 {
+    font-size: 52px !important;
+    line-height: 50px !important;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.header {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.mobile-menu__btn {
+    right: 5px;
+}
+
+.image-home {
+    width: 100%;
+}
+
+
+.header-info {
+    padding: 20px 0px;
+    margin-top: -50px;
+    width: 100%;
+}
+
+.header-image {
+    width:100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.button-beer {
+    box-shadow: 1px 1px 15px 5px #3e3125;
+}
+
+.nav-social li {
+    margin: 10px;
+}
+
+.advantages {
+    width: 100%;
+    padding:50px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+
+
+.icon-box {
+    padding: 1px;
+}
+
+.image-about {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+
+.about {
+    width: 100%;
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+}
+
+/*.about-info {
+    padding: 50px;
+
+}*/
+
+.about p {
+    font-size: 22px;
+    line-height: 30px;
+
+
+
+}
+
+.about-image {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.products {
+
+    padding: 60px 0px 180px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 70%;
+}
+
+.image-product {
+    width: 40vh;
+}
+
+.promotion {
+    padding: 80px 20px;
+}
+
+.video {
+    width: 100%;
+    padding: 90px 30px 50px 30px;
+}
+
+
+.video h2 {
+    font-size: 44px !important;
+    line-height: 50px !important;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.promo-menu {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.action-asado {
+    width: 100%;
+}
+
+.action-cerveza {
+    width: 100%;
+}
+
+.footer-contenedor {
+    display: flex;
+    height: auto;
+    padding: 50px;
+    margin-top: -5px;
+    flex-direction: column;
+}
+
+
+.footer-logo{
+    padding: 50px 20px;
+}
+
+.footer-contact {
+    padding: 50px 20px;
+}
+
+.footer-subscribe {
+    padding: 50px 20px;
+}
+
+.copywrite {
+    height: 60px;
+    display: block;
+    text-align: center;
+    padding: 12px 40px;
+    border-top: 1px solid #ffffff26;
+}
+
+.modal-contenido {
+    width: 100%;
+}
+
+.modal-contenido2 {
+    width: 100%;
+
+}
+.modal-contenido2 a {
+    margin: 80px 50px;
+}
+
+
+.login-html {
+    padding: 130px 80px 0px 70px;
+}
+.login-html .tab {
+    font-size: 18px;
+    margin: 0 15px 20px 0;
+
+}
+
+
+
+.login-mobile {
+    color: #fff;
+    width: 35px;
+    margin-top: -5px;
+    margin-right: 50px;
+    height: 35px;
+}
+
+.button-login {
+  display:none;
+}
+.modal-contenido {
+
+    margin: 20% auto;
+    justify-content: center;
+}
+
+
+
+}
